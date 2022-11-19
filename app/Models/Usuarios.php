@@ -11,10 +11,10 @@ class Usuario extends Model
 {
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'usuarios';
     protected $primaryKey = 'id';
 
-    protected $fillable = ['name', 'email', 'password'];
-    protected $hidden = ['password', 'created_at', 'updated_at'];
+    protected $fillable = ['nome', 'email', 'idade', 'telefone'];
+    protected $hidden = ['created_at', 'updated_at'];
    
 }
